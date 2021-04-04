@@ -12,7 +12,7 @@ function App() {
       return;
     }
     let response = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=1344a73d468f2b6aff8747cbdf76be71`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=1344a73d468f2b6aff8747cbdf76be71`
     );
     if (response.ok) {
       let newJson = await response.json();
